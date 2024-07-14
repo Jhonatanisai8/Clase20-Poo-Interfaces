@@ -9,6 +9,7 @@ import org.Jhonatan.PooInterfaces.Imprenta.Modelo.Pagina;
 import org.Jhonatan.PooInterfaces.Imprenta.Modelo.Persona;
 
 import static org.Jhonatan.PooInterfaces.Imprenta.Modelo.Imprimible.imprimir;
+//import static org.Jhonatan.PooInterfaces.Imprenta.Modelo.Imprimible.TEXTO_DEFECTO;
 
 public class EjemploImprentaOtimizado {
     public static void main(String[] args) {
@@ -47,7 +48,7 @@ public class EjemploImprentaOtimizado {
         imprimir(libro);
         imprimir(cv);
 
-        //prueba del atributo de tipo final static de la interface imprimible
+        // prueba del atributo de tipo final static de la interface imprimible
         System.out.println(Imprimible.TEXTO_DEFECTO);
     }
 
