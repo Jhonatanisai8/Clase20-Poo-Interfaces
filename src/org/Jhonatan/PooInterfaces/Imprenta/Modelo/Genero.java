@@ -5,5 +5,6 @@ public enum Genero {
     ACCION,
     AVENTURA,
     TERROR,
-    CIENCIA_FICCION;
+    CIENCIA_FICCION,
+    PROGRAMACIÓN;
 }
