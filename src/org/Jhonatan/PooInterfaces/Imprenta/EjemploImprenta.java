@@ -2,7 +2,7 @@ package org.Jhonatan.PooInterfaces.Imprenta;
 
 import org.Jhonatan.PooInterfaces.Imprenta.Modelo.Curriculo;
 import org.Jhonatan.PooInterfaces.Imprenta.Modelo.Genero;
-import org.Jhonatan.PooInterfaces.Imprenta.Modelo.Hoja;
+import org.Jhonatan.PooInterfaces.Imprenta.Modelo.Imprimible;
 import org.Jhonatan.PooInterfaces.Imprenta.Modelo.Informe;
 import org.Jhonatan.PooInterfaces.Imprenta.Modelo.Libro;
 import org.Jhonatan.PooInterfaces.Imprenta.Modelo.Pagina;
@@ -36,8 +36,6 @@ public class EjemploImprenta {
         Libro libro = new Libro("Erich Gamma",
                 "Patrones de Diseño: Elem. Reusables POO",
                 Genero.PROGRAMACIÓN);
-        libro.addPagina(new Pagina("Patrón"));
-
         // anadimos paginas
         libro.addPagina(new Pagina("Patrón Singleton"))
                 .addPagina(new Pagina("Patrón Observador"))
@@ -55,10 +53,10 @@ public class EjemploImprenta {
         Informe informe = new Informe("Martin Fowler", "James", "Estudio sobre microservicios");
         imprimir(cv);
         imprimir(informe);
-        libro.imprimir();
+        imprimir(libro);
     }
 
-    public static void imprimir(Hoja imprimible) {
-        System.out.println(imprimible.imprimir());
+    public static void imprimir(Imprimible imprimible) {
+        System.out.println(imprimible.imprimir() + "\n");
     }
 }
