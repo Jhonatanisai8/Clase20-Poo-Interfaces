@@ -30,7 +30,7 @@ public class Curriculo extends Hoja {
                 .append(this.carrera).append("\n")
                 .append("Experiencias: \n");
         for (String ex : this.experiencias) {
-            sb.append("_").append(ex).append("\n");
+            sb.append("-").append(ex).append("\n");
         }
         return sb.toString();
     }
