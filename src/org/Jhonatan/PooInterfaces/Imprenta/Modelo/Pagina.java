@@ -8,7 +8,7 @@ public class Pagina extends Hoja {
 
     @Override
     public String imprimir() {
-        return null;
+        return this.contenido;
     }
 
 }
