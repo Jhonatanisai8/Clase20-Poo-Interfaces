@@ -17,6 +17,7 @@ public class EjemploImprentaOtimizado {
         ejemploClaseAnomina();
         ejemploClaseAnomina2();
         ejemploClaseAnomina3();
+        ejemploClaseAnominaPasadoPorArgumento();
     }
 
     public static void ejemploLibro() {
@@ -76,5 +77,14 @@ public class EjemploImprentaOtimizado {
             }
         };
         imprimir(obj);
+    }
+
+    public static void ejemploClaseAnominaPasadoPorArgumento() {
+        imprimir(new Imprimible() {
+            @Override
+            public String imprimir() {
+                return "Hola este es un ejemplo de impresion pasada como parametro la metodo Imprimir";
+            }
+        });
     }
 }
