@@ -8,6 +8,8 @@ import org.Jhonatan.PooInterfaces.Imprenta.Modelo.Libro;
 import org.Jhonatan.PooInterfaces.Imprenta.Modelo.Pagina;
 import org.Jhonatan.PooInterfaces.Imprenta.Modelo.Persona;
 
+import static org.Jhonatan.PooInterfaces.Imprenta.Modelo.Imprimible.imprimir;
+
 public class EjemploImprentaOtimizado {
     public static void main(String[] args) {
         ejemploLibro();
@@ -36,13 +38,15 @@ public class EjemploImprentaOtimizado {
 
         Informe informe = new Informe(
                 new Persona("Martin", " Fowler"), new Persona("Patricio", "Juarez"), "Estudio sobre microservicios");
-        imprimir(cv);
+        /*
+         * imprimir(cv);
+         * imprimir(informe);
+         * imprimir(libro);
+         */
         imprimir(informe);
         imprimir(libro);
-    }
+        imprimir(cv);
 
-    public static void imprimir(Imprimible imprimible) {
-        System.out.println(imprimible.imprimir() + "\n");
     }
 
 }
