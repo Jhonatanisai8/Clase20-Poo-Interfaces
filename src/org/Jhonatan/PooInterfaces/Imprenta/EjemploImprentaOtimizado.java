@@ -14,6 +14,9 @@ import static org.Jhonatan.PooInterfaces.Imprenta.Modelo.Imprimible.imprimir;
 public class EjemploImprentaOtimizado {
     public static void main(String[] args) {
         ejemploLibro();
+        ejemploClaseAnomina();
+        ejemploClaseAnomina2();
+        ejemploClaseAnomina3();
     }
 
     public static void ejemploLibro() {
@@ -52,4 +55,26 @@ public class EjemploImprentaOtimizado {
         System.out.println(Imprimible.TEXTO_DEFECTO);
     }
 
+    public static void ejemploClaseAnomina() {
+        imprimir(new Imprimible() {
+
+        });
+    }
+
+    public static void ejemploClaseAnomina2() {
+        Imprimible obj = new Imprimible() {
+
+        };
+        imprimir(obj);
+    }
+
+    public static void ejemploClaseAnomina3() {
+        Imprimible obj = new Imprimible() {
+            @Override
+            public String imprimir() {
+                return "Hola Jhonatan";
+            }
+        };
+        imprimir(obj);
+    }
 }
