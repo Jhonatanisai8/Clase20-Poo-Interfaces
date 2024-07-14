@@ -5,7 +5,7 @@ public class Informe extends Hoja {
     private String autor;
     private String revisor;
 
-    public Informe(String autor,String revisor,String contenido) {
+    public Informe(String autor, String revisor, String contenido) {
         super(contenido);
         this.autor = autor;
         this.revisor = revisor;
@@ -13,7 +13,10 @@ public class Informe extends Hoja {
 
     @Override
     public String imprimir() {
-        return null;
+        return "Informe escrito por " + this.autor +
+                "Revisado por: " + this.revisor +
+                "\n" + this.contenido;
+    
     }
 
 }
