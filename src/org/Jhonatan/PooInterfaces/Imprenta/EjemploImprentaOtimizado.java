@@ -47,6 +47,8 @@ public class EjemploImprentaOtimizado {
         imprimir(libro);
         imprimir(cv);
 
+        //prueba del atributo de tipo final static de la interface imprimible
+        System.out.println(Imprimible.TEXTO_DEFECTO);
     }
 
 }
