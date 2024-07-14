@@ -3,7 +3,8 @@ package org.Jhonatan.PooInterfaces.Imprenta.Modelo;
 import java.util.List;
 
 public class Libro implements Imprimible {
-    List<Hoja> paginas;
+    // List<Hoja> paginas;
+    List<Imprimible> paginas;
     private String autor;
     private String titulo;
     private Genero genero;
@@ -14,8 +15,8 @@ public class Libro implements Imprimible {
         this.genero = genero;
     }
 
-    public Libro addPagina(Hoja hoja) {
-        this.paginas.add(hoja);
+    public Libro addPagina(Imprimible pagina) {
+        this.paginas.add(pagina);
         return this;
     }
 
@@ -25,7 +26,7 @@ public class Libro implements Imprimible {
         sb.append(this.titulo).append("\n")
                 .append("Autor: ").append(this.autor).append("\n")
                 .append("Genero: ").append(genero).append("\n");
-        for (Hoja hoja : this.paginas) {
+        for (Imprimible hoja : this.paginas) {
             sb.append(hoja.imprimir()).append("\n");
         }
         return sb.toString();
