@@ -2,7 +2,7 @@ package org.Jhonatan.PooInterfaces.Imprenta.Modelo;
 
 import java.util.List;
 
-public class Libro {
+public class Libro implements Imprimible {
     List<Hoja> paginas;
     private String autor;
     private String titulo;
@@ -19,6 +19,7 @@ public class Libro {
         return this;
     }
 
+    @Override
     public String imprimir() {
         StringBuilder sb = new StringBuilder("Titulo: ");
         sb.append(this.titulo).append("\n")
