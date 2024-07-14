@@ -3,9 +3,9 @@ package org.Jhonatan.PooInterfaces.Imprenta.Modelo;
 public class Informe extends Hoja implements Imprimible {
 
     private Persona autor;
-    private String revisor;
+    private Persona revisor;
 
-    public Informe(Persona autor, String revisor, String contenido) {
+    public Informe(Persona autor, Persona revisor, String contenido) {
         super(contenido);
         this.autor = autor;
         this.revisor = revisor;
