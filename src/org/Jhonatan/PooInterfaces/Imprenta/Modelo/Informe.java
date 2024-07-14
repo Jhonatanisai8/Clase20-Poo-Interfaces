@@ -16,7 +16,6 @@ public class Informe extends Hoja {
         return "Informe escrito por " + this.autor +
                 "Revisado por: " + this.revisor +
                 "\n" + this.contenido;
-    
     }
 
 }
