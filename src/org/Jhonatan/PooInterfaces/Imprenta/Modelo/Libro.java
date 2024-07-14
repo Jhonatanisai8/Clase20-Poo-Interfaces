@@ -23,7 +23,8 @@ public class Libro implements Imprimible {
         return this;
     }
 
-    @Override
+   /*
+    *  @Override
     public String imprimir() {
         StringBuilder sb = new StringBuilder("Titulo: ");
         sb.append(this.titulo).append("\n")
@@ -34,4 +35,5 @@ public class Libro implements Imprimible {
         }
         return sb.toString();
     }
+    */
 }
