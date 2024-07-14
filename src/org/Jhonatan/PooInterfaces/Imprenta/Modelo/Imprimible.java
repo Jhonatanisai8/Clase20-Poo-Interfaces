@@ -3,6 +3,10 @@ package org.Jhonatan.PooInterfaces.Imprenta.Modelo;
 public interface Imprimible {
 
     final static String TEXTO_DEFECTO = "Imprimiendo un valor por defecto";
+    /*
+     * TAMBIEN SE PUEDE DEJAR ASI
+     * final static String TEXTO_DEFECTO = "Imprimiendo un valor por defecto";
+     */
 
     // public String imprimir();
     default String imprimir() {
