@@ -7,6 +7,6 @@ abstract public class Hoja {
         this.contenido = contenido;
     }
 
-    abstract public void imprimir();
+    abstract public String imprimir();
 
 }
