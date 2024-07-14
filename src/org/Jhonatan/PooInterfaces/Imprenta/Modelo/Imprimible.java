@@ -1,9 +1,12 @@
 package org.Jhonatan.PooInterfaces.Imprenta.Modelo;
 
 public interface Imprimible {
+
+    final static String TEXTO_DEFECTO = "Imprimiendo un valor por defecto";
+
     // public String imprimir();
     default String imprimir() {
-        return "Impriendo un valor por defecto";
+        return TEXTO_DEFECTO;
     }
 
     // se puede dejar asi
