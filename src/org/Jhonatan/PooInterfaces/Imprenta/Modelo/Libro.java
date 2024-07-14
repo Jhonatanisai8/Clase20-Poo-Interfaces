@@ -18,4 +18,15 @@ public class Libro {
         this.paginas.add(hoja);
         return this;
     }
+
+    public String imprimir() {
+        StringBuilder sb = new StringBuilder("Titulo: ");
+        sb.append(this.titulo).append("\n")
+                .append("Autor: ").append(this.autor).append("\n")
+                .append("Genero: ").append(genero).append("\n");
+        for (Hoja hoja : this.paginas) {
+            sb.append(hoja.imprimir()).append("\n");
+        }
+        return sb.toString();
+    }
 }
